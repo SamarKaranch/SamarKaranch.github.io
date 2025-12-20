@@ -36,6 +36,13 @@ Experience
 
 Projects
 ======
+## Mario RL Agent  
+**Python, PyTorch**  
+*November 2025 - December 2025*
+
+- Developed a Deep Q-Network (DQN) agent to play Super Mario, including environment preprocessing and discrete action-space design
+- Tuned reward shaping and hyperparameters to improve training stability, convergence, and level completion performance
+
 ## Lady Bug  
 **Python, Flask, MongoDB**  
 *August 2024 – May 2025*
