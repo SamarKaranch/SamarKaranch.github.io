@@ -11,51 +11,55 @@ Hello, I'm Samar!
 
 I'm currently pursuing my M.S. in Computer Science at UC San Diego, with a focus in AI and NLP. Previously I graduated from the University of Central Florida with a bachelor's degree (B.S.) in Computer Science and a minor in Mathematics.
 
-I'm currently seeking internships for Summer 2026, please feel free to reach out if you are interested!
-
+I'm currently seeking new grad positions, please feel free to reach out if you are interested!
 
 Experience
 ======
-## AI Engineer Intern
+## Software Engineering Intern
 **Soar Tech** — *Orlando, FL*  
 *June 2025 – September 2025*
 
-- Fine-tuned three ModernBERT models via Hugging Face Transformers for NER tasks, improving extraction accuracy for domain-specific entities
-- Utilized Docling to extract unstructured text from PDFs and convert it into structured, machine-readable formats for downstream processing
-- Developed data pipelines leveraging the OpenAI API to extract and structure 60,000+ data points from unstructured PDFs for ModernBERT NER fine-tuning
-- Integrated fine-tuned ModernBERT models into a backend system using FastAPI and PostgreSQL, enabling scalable inference and seamless data storage and retrieval
+- Reduced hallucinated entity extractions by integrating three fine-tuned ModernBERT models (0.91 F1) as a verification layer within a PDF agent, cross-checking its own NER outputs before finalizing results
+- Enabled domain-specific NER fine-tuning with Python and Hugging Face by building a data pipeline with Docling and the OpenAI API that generated 60,000+ structured data points
+- Containerized models with Docker and served them via vLLM behind a FastAPI and PostgreSQL backend
 
 ## Undergraduate Research Assistant
 **Sage Lab, University of Central Florida** — *Orlando, FL*  
 *March 2024 – August 2025*
 
-- Worked on an accessibility research project using AI to identify accessibility issues in UI/UX design and utilized GitHub and Stack Overflow APIs to generate labels
-- Developed a ground truth dataset using over 70,000 JSON metadata files and JPEG images to help AI models predict accessibility issues in the underlying UI
-- Processed images for text size, text contrast, and image contrast to support ground truth dataset creation
-- Utilized Python, OpenCV, scikit-learn, Google OCR, and Pillow
+- Enabled automated detection of accessibility issues in UI/UX designs by building an automated-labeling pipeline
+- Powered the project's accessibility-prediction models by mining the GitHub and Stack Overflow APIs with Python to build a ground-truth dataset of 70,000+ JSON metadata files and images
+- Improved accessibility-prediction accuracy by extracting text-size, text-contrast, and image-contrast features from UI images as model training inputs
 
 Projects
 ======
-## Mario RL Agent  
-**Python, PyTorch**  
-*November 2025 - December 2025*
-
-- Developed a Deep Q-Network (DQN) agent to play Super Mario, including environment preprocessing and discrete action-space design
-- Tuned reward shaping and hyperparameters to improve training stability, convergence, and level completion performance
-
-## Lady Bug  
-**Python, Flask, MongoDB**  
+## [Lady Bug](https://github.com/LadyBugML/ladybug)  
+**Python, Flask, MongoDB, Github** — *Published at ICSME 2025 (Auckland, NZ)*  
 *August 2024 – May 2025*
 
-- Enhanced bug localization accuracy through a GitHub bot utilizing bug report and source code embeddings augmented with user interface data (novel approach), achieving a 10% relative improvement in bug finding
-- Led database development using MongoDB to store embeddings and associated metadata
-- Advanced research outcomes by experimenting with 5+ frontier LLMs, resulting in a 15% increase over the previous methodology
-- Awarded a $250 scholarship, Judge’s Choice Award at the Student Research Symposium, selected as a college-wide showcase finalist, and accepted to the ICSME 2025 conference in Auckland, New Zealand
+- Built a GitHub bot for UI-enhanced bug localization in mobile apps, combining bug-report and source-code embeddings with UI data — a novel approach later published at ICSME 2025
+- Benchmarked 5+ frontier LLMs for the localization task, driving a 15% improvement over the prior methodology
+- Implemented CI/CD pipeline (GitHub Actions) with automated custom benchmark suite of 20 real-world GitHub repositories with known bugs to validate the tool's localization accuracy against ground-truth reports
+- Recognition: Judge's Choice Award (Student Research Symposium), showcase finalist, $250 scholarship
 
-## Focus Flow  
+## [Agentic 3D Gaussian Splatting](https://github.com/juliexwu/agentic-splatting)  
+**Python, LangGraph, gsplat**  
+*March 2026 – June 2026*
+
+- Built a multi-agent Actor-Critic pipeline in LangGraph where multiple VLM agents (Gemma) iteratively tune 3D Gaussian Splatting training hyperparameters, removing the need for manual configuration tuning
+- Enabled the pipeline to initialize directly from raw video by implementing a GPU-accelerated pre-filtering stage: frame extraction (ffmpeg) and point-cloud generation (pycolmap)
+- Achieved an average PSNR gain of 0.52 dB over the initial configuration across agentic refinement loops
+
+## [Formula 1 Track Optimization](https://github.com/SamarKaranch/F1-Track-Optimizer)  
+**Python, FastF1, CVXPY, Clarabel, Matplotlib**  
+*February 2026 – March 2026*
+
+- Formulated minimum lap-time optimization as a nonconvex control problem, resolving a bilinear friction/curvature coupling via Sequential Convex Programming into per-iteration SOCPs solved with Clarabel
+- Validated on 5 real F1 circuits using FastF1 telemetry, beat Las Vegas Grand Prix lap time by 8.11s
+
+## [Focus Flow](https://github.com/colintle/FocusFlow)  
 **Next.js, React, TypeScript, Tailwind CSS, Firebase**  
 *August 2023 – December 2023*
 
-- Developed a full-stack planner application to help users efficiently organize and track daily activities
-- Collaborated with four developers and led backend, middleware, and database development
-- Designed and implemented REST APIs to support efficient CRUD operations on a Firebase database
+- Delivered a full-stack planner app with a calendar view by building reusable React/TypeScript components styled with Tailwind CSS and syncing task state in real time through Firebase listeners
+- Streamlined CRUD operations across the app by designing and implementing REST APIs for Firebase
